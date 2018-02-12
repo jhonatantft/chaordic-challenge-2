@@ -1,0 +1,442 @@
+/* Header */
+
+.global-header {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
+    background: #ffffff !important;
+}
+
+.global-header .global-header__user#header-cliente-telefone p {
+    visibility: hidden;
+}
+
+.global-header .global-header__user#header-cliente-telefone p:before {
+    visibility: visible;
+    content: 'Olá! Faça seu login ou cadastre-se';
+}
+
+.netfarma-header {
+    background: #f8f8f8 !important;
+    padding-top: 50px !important;
+    border-bottom: 3px solid #9379a8 !important;
+}
+
+.netfarma-header > .container {
+    height: 140px;
+}
+
+.netfarma-header__logo {
+    width: 140px;
+}
+
+.netfarma-header__logo img {
+    content:url(../img/logo-linx.png) !important;
+    float: left;
+    max-width: 80%;
+    height: 100%;
+    margin-top: -20px;
+}
+
+.netfarma-header__logo, .netfarma-header__search-bar, .netfarma-header__shopping-cart {
+    margin-bottom: 55px !important;
+}
+
+.fixed-header+section {
+    margin-top: 232px !important;
+}
+
+.netfarma-header__search-bar {
+    height: auto !important;
+    border: 3px solid #9379a8 !important;
+    border-radius: 3px;
+}
+
+.netfarma-header__shopping-cart .shopping-cart-button .info-button {
+    height: 39px !important;
+}
+
+.netfarma-header__shopping-cart {
+    border: 3px solid #9379a8 !important;
+    border-radius: 3px;
+}
+
+.netfarma-header:after {
+    box-shadow: none !important;
+}
+
+.netfarma-header__categories {
+    height: 46px;
+    top: -10px;
+    padding: 12px 0;
+    text-align: center !important;
+}
+
+.netfarma-header__categories .category-item {
+    display: table-cell !important;
+    font-weight: bold;
+}
+
+.buscaGeral button:after {
+    content: 'todas as categorias';
+    color: black;
+}
+
+.buscaGeral button .icon-search-top {
+    background-image: none;
+    border: solid #000000;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    float: right;
+    margin-top: -5px;
+    transform: rotate(45deg) scale(.4);
+    -webkit-transform: rotate(45deg) scale(.4);
+}
+
+.no-margin-top {
+    margin-top: -20px !important;
+    transition-duration: .3s;
+}
+
+/* Sidebar filters */
+
+.neemu-filter {
+    border-top: 3px solid #9379a8;
+    margin: 15px 0;
+    padding-top: 15px;
+}
+
+.filter_categoria {
+    border-top: none;
+}
+
+.neemu-filter > label{
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+}
+
+.neemu-filter .neemu-show-more-btn {
+    margin: auto;
+    display: table;
+}
+
+.neemu-filter ul li {
+    margin: 15px 0;
+    /*border-bottom: 1px solid #828282;*/
+}
+
+.neemu-filter ul li a span{
+    color: #000000;
+    font-size: 14px;
+}
+
+/* Current product list */
+
+.neemu-wrap .product-item {
+    width: 33.33% !important;
+    padding: 5px;
+}
+
+.neemu-wrap .product-item .item-tag {
+    font-weight: lighter !important;
+    width: 80px !important;
+    height: 20px !important;
+    padding-top: 2px !important;
+    border-radius: 2px !important;
+    background: #ec7426 !important;
+    margin: 0 !important;
+    top: 3% !important;
+    left: 4% !important;
+}
+
+.neemu-wrap .product-item img {
+    width: 100% !important;
+    height:100% !important;
+}
+
+.product-filters .filter-item--items, .product-filters .filter-item--generic {
+    float: none !important;
+    margin: 0 10px;
+}
+
+.product-item .product-item__title {
+    padding: 0 !important;
+    color: #000000;
+}
+
+.product-item__item-title-details .details-product-old-price {
+    position: absolute;
+    font-size: 12px !important;
+    margin: 0 !important;
+    top: 51%;
+    left: 33%;
+    width: 80px !important;
+    height: 40px !important;
+    padding-top: 14px;
+    border-radius: 2px;
+    color: #c7bdd0;
+    background: #836799;
+}
+
+.product-item__item-title-details .details-product-new-price {
+    position: absolute;
+    /*font-size: 12px !important;*/
+    margin: 0 !important;
+    top: 61%;
+    right: -1%;
+    width: 150px !important;
+    height: 40px !important;
+    padding-top: 10px;
+    border-radius: 0px;
+    color: #8c41c6;
+    background: #5a2a80;
+}
+
+.product-item .product-item__rating {
+    position: absolute !important;
+    top: 74%;
+    right: -1%;
+    width: 0;
+    height: 0;
+    border-top: 9px solid #2f084d;
+    border-right: 8px solid transparent;
+}
+
+.product-item:hover .product-view-cart {
+    display: block !important;
+    animation-name: productViewCart;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes productViewCart {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.details-product-new-price em {
+    color: #ffffff;
+}
+
+/* Pagination */
+
+.neemu-pagination {
+    margin: 0 auto !important;
+    padding: 0;
+    text-align: center;
+    width: 66%;
+}
+
+.neemu-pagination li {
+    float: left;
+}
+
+.neemu-pagination li span, .neemu-pagination li a {
+    padding: 0 10px;
+}
+
+.neemu-pagination li a:hover {
+    color: #8c41c6;
+}
+
+.neemu-pagination-current {
+    font-weight: bold;
+    color: #8c41c6;
+}
+
+.neemu-pagination-container {
+    text-align: center;
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.neemu-pagination-container {
+    margin: 0 auto;
+    background: transparent;
+    color: #a1a1a1;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+}
+
+/* Footer */
+
+.netfarma-footer-ofertas .netfarma-footer-advertencia {
+    background-color: #a3a3a3;
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.netfarma-footer-ofertas .netfarma-footer-advertencia:before {
+    content: 'Classificados grátis - Brasil   -  Copyright © 2006-2014 Linx, Inc. | Cenno Sbrighi, 170, São Paulo - SP';
+}
+
+/* Product quickview and cart feature */
+
+.product-view-cart {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background-color: #ffffff9c;
+    top: 5px;
+    right: 5px;
+    border-radius: 0 0 0 5px;
+}
+
+.product-cart-icon {
+    width: 22px;
+    height: 0;
+    border-width: 13px 5px 0 5px;
+    border-style: solid;
+    border-color: #ec7426;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.product-view-icon {
+    margin: 10px 0;
+    width: 20px;
+    height: 20px;
+    border: solid 3px #5a2a80;
+    border-radius: 75% 15%;
+    position: relative;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.product-view-icon:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: solid 2px #5a2a80;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+}
+
+/* Modal */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, .8);
+    z-index: 10001;
+}
+
+#product-modal {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+#product-modal.modal-style {
+    width: 100%;
+    height: 100%;
+    max-width: 680px;
+    max-height: 480px;
+    min-width: 100px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 10px !important;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: 0 3px 14px -4px #000;
+    -moz-box-shadow: 0 3px 14px -4px #000;
+    -webkit-box-shadow: 0 3px 14px -4px #000;
+}
+
+.product-image-modal {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.product-detail-modal {
+    height: 100%;
+    width: 50%;
+    float: left;
+    padding: 0 35px;
+}
+
+#product-image-modal {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#product-title-modal {
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#old-price-modal {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+}
+
+#new-price-modal {
+    font-size: 24px;
+    color: #8c41c6;
+    font-weight: bold;
+}
+
+#product-measurement-modal {
+    margin: 40px 0;
+    font-size: 18px;
+    color: #000000;
+}
+
+.product-detail-modal .btn-modal {
+    background-color: #ec7426;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.close {
+    margin: 5px 8px;
+}
+
+/* Display none */
+
+.netfarma-header__categories .category-item>span a:after, .busca-wrap input, .neemu-wrap .product-item .item-tag br,
+.product-item__item-title-details .details-product-measurement, .product-item__item-title-details .details-product-supplier,
+.product-item__item-title-details .details-product-parcels, .product-item .product-item__item-button,
+.netfarma-footer-ofertas > .container, .netfarma-footer-ofertas > .container .col-md-10,
+.netfarma-footer-nav .container .row .col-md-3:nth-child(4), .netfarma-footer-ofertas .netfarma-footer-advertencia .container,
+#powered-by-neemu, #oferta-dia {
+    display: none !important;
+}
