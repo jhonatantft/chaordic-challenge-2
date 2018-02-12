@@ -6,5 +6,7 @@
 ## Getting Started
 
 ```
+> git clone https://github.com/jhonatantft/chaordic-challenge-2.git
+> npm start
 http://localhost:8000/
 ```
