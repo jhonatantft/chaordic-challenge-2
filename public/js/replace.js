@@ -1,3 +1,5 @@
+// want to understand better? go to my repo https://github.com/jhonatantft/chaordic-challenge-2 and clone it
+// this script and product.js will work properly within the project
 window.onload = function(){
 
   var iframe = document.createElement('iframe');
@@ -11,6 +13,8 @@ window.onload = function(){
     var style = document.createElement('link');
     style.href = '../public/css/style.css';
 
+    // this css link belongs to the project on this repo, but you can use the real one. Don't forget to concatenate the getDateTime() at the end of the url
+    // if you do so, probably you'll get a cross origin request error
     var link = iframe.contentDocument.head.querySelector('link[href="https://busca2.netfarma.com.br/css/neemu-styles-v1.css?20180210023436"]');
     link.href = style.href;
 
@@ -45,7 +49,7 @@ window.onload = function(){
     iframe.contentDocument.body.appendChild(modalOverlay);
   }
 
-  // Function to concatenate the loader.js url on the fly #not used, just a sample
+  // Function to concatenate the neemu-styles url on the fly #not used, just a sample
     function getDateTime() {
       var now     = new Date(new Date().toLocaleString("en-UK",{timeZone:'Europe/London'}));
       var year    = now.getFullYear();
